@@ -11,7 +11,6 @@ opcion=100
 #Precio Fabircación
 #Precio venta
 
-
 productos=[]
 
 while(opcion!=0):
@@ -31,7 +30,15 @@ while(opcion!=0):
         print(productos)
         print("Mostrando productos")
     elif(opcion==3):
-        print
+         print(productos)
+         print("Mostrando productos")
+         
+    elif(opcion==4):
+        codigo = input('Introduce codigo del producto: ')
+        if codigo in producto:
+            del producto[codigo]
+        else:
+            print('No existe el cliente con el codigo', codigo)
     else:
         print("digite una opcion valida")
 else:
